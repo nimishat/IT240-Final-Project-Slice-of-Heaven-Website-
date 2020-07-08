@@ -1,0 +1,257 @@
+
+* {
+padding: 0px;
+margin: 0px;
+font-family: 'Raleway', sans-serif;
+}
+
+.navText {
+font-family: 'Notable', sans-serif;
+color: white;
+font-weight: bold;
+}
+
+body {
+background-image:url("https://ak.picdn.net/shutterstock/videos/1051564267/thumb/1.jpg?ip=x480");
+}
+
+h2{
+  text-align: center;
+}
+
+
+/* CSS for Flip-Cards on the PlacesNearMe Page */
+
+/* Set the width and height accordingly */
+.flip-card {
+  background-color: transparent;
+  width: 300px; /* Width and Height of the card itself which had to be adjusted to fit all pictures */
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  align-items: center;
+  perspective: 1000px; /* the 3D effect */
+}
+
+/* Position the front and back side of card */
+.flip-card-inner {
+  position: relative; /* This feature allows the image to adjust and fill in gaps and surrounding elements */
+  width: 100%;
+  height: 100%;
+  text-align: center; /* The text inside the card when flipped is centered */
+  transition: transform 1s;  /* The amount of time it takes to flip the card--can be adjusted */
+  transform-style: preserve-3d; /*This keeps the 3D effect when it is flipping back and forth */
+}
+
+/* Does a horizontal flip on the inner card, when you hover over the mouse, by 180 degrees so it looks as if it is flipping halfway around */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Not necessary but an added element to just keep the flipping neat */
+}
+
+/* Style the front side of card */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side of card */
+.flip-card-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg); /* Rotate another 180deg to go back to the other side */
+}
+
+.introParagraph {
+  width: 500px;
+  height:450px;
+  border: 15px white;
+  padding: 30px;
+  margin: auto;
+  border-style: solid;
+  text-align: center;
+  bottom: 10px;
+}
+
+.locationsParagraph {
+  width: 500px;
+  height:450px;
+  border: 15px black;
+  padding: 30px;
+  margin: auto;
+  border-style: solid;
+  text-align: center;
+  bottom: 10px;
+}
+
+.pizzaMenuBox {
+  width: 410px;
+  height:150px;
+  border: 15px white;
+  padding: 50px;
+  margin: auto;
+  border-style: solid;
+  text-align: center;
+}
+
+/* CSS FOR HOMEPAGE    <-------------------------------------- */
+.h1 {
+font-size: 85px;
+display: flex;
+justify-content: center;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+ul {
+list-style-type: none;
+margin: 10px;
+padding: 10px;
+display: flex;
+flex-direction: row;
+margin-left: 0px;
+margin-right: 0px;
+background-color: black;
+}
+
+li a {
+display: block;
+width: 350px;
+text-align: center;
+text-decoration: none;
+font-family: arial;
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+/*HOMEPAGE*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+a:hover {
+color: white;
+}
